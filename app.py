@@ -1,4 +1,5 @@
 import os
+from typing import Optional
 from flask import Flask
 
 from controllers.food_controller import create_food_api
@@ -8,8 +9,8 @@ from views.main_view import create_main_view
 
 def create_app(
     *,
-    csv_path: str | None = None,
-    db_path: str | None = None,
+    csv_path: Optional[str] = None,
+    db_path: Optional[str] = None,
 ) -> Flask:
     app = Flask(__name__)
 

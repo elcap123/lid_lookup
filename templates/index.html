@@ -43,6 +43,7 @@
                         <th>Category</th>
                         <th>Serving</th>
                         <th>Iodine (mcg)</th>
+                        <th>Level</th>
                         <th>Range (min–max)</th>
                     </tr>
                 </thead>
@@ -78,11 +79,22 @@
                     const range = (food.min !== null && food.max !== null)
                         ? `${food.min}–${food.max}`
                         : '—';
+                    const iodine = Number(food.iodine_mcg);
+                    let levelLabel = 'High';
+                    let levelClass = 'tag--high';
+                    if (iodine <= 50) {
+                        levelLabel = 'Low';
+                        levelClass = 'tag--low';
+                    } else if (iodine <= 150) {
+                        levelLabel = 'Moderate';
+                        levelClass = 'tag--medium';
+                    }
                     tr.innerHTML = `
                         <td>${food.description}</td>
                         <td><span class="category-tag">${food.category}</span></td>
                         <td>${food.serving_size} ${food.serving_measure}</td>
                         <td class="iodine-value">${food.iodine_mcg}</td>
+                        <td><span class="iodine-tag ${levelClass}">${levelLabel}</span></td>
                         <td>${range}</td>
                     `;
                     resultsBody.appendChild(tr);
