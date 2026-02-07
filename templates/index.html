@@ -109,9 +109,51 @@
             </div>
         </section>
 
+        <section id="tab-about" class="tab-panel">
+            <div class="about-card">
+                <h2>About This App</h2>
+                <p class="about-text">
+                    This tool helps you quickly look up iodine content in common foods
+                    and track a daily total in a lightweight, session-based tracker.
+                </p>
+                <p class="about-text">
+                    Low-iodine diets are often temporary and used for specific medical
+                    situations; this app helps you estimate iodine intake from everyday foods.
+                </p>
+                <a class="about-link" href="https://github.com/elcap123/lid_lookup" target="_blank" rel="noreferrer">
+                    View the project on GitHub
+                </a>
+            </div>
+
+            <div class="about-card">
+                <h2>Data Attribution</h2>
+                <ul class="about-list">
+                    <li>
+                        Source: U.S. Department of Agriculture, Agricultural Research Service (USDA-ARS)
+                    </li>
+                    <li>
+                        Dataset: USDA, FDA, and ODS-NIH Database for the Iodine Content of Common Foods,
+                        Release 4.0 (2024)
+                    </li>
+                    <li>
+                        Downloaded from the USDA ARS Iodine page and documented in the official release PDF
+                    </li>
+                </ul>
+                <div class="about-links">
+                    <a href="https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/methods-and-application-of-food-composition-laboratory/mafcl-site-pages/iodine/" target="_blank" rel="noreferrer">
+                        USDA ARS Iodine Page
+                    </a>
+                    <a href="https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Iodine/IODINE_DATABASE_RELEASE_4_DOCUMENTATION.pdf" target="_blank" rel="noreferrer">
+                        Release 4.0 Documentation
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <nav class="tab-bar" aria-label="Primary">
             <button class="tab-btn active" data-tab="search">Search</button>
             <button class="tab-btn" data-tab="tracker">Tracking (<span id="tracking-count">0</span>)</button>
+            <button class="tab-btn" data-tab="about">About</button>
         </nav>
     </main>
 
@@ -151,7 +193,7 @@
         function setActiveTab(tabName) {
             tabButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tabName));
             tabPanels.forEach(panel => panel.classList.toggle('active', panel.id === `tab-${tabName}`));
-            document.body.classList.toggle('tracker-only', tabName === 'tracker');
+            document.body.classList.toggle('hide-header', tabName === 'tracker' || tabName === 'about');
         }
 
         function renderResults(foods, title) {

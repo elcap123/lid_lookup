@@ -30,7 +30,7 @@ header {
     text-align: left;
 }
 
-body.tracker-only header {
+body.hide-header header {
     display: none;
 }
 
@@ -140,7 +140,8 @@ main {
 }
 
 .results-section,
-.tracker-section {
+.tracker-section,
+.about-card {
     background: var(--surface);
     border-radius: var(--radius);
     padding: 1rem;
@@ -172,6 +173,53 @@ main {
 
 .clear-btn:hover {
     background: #f3eee7;
+}
+
+.about-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.about-text {
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.about-link {
+    display: inline-block;
+    margin-top: 0.2rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+.about-list {
+    list-style: none;
+    display: grid;
+    gap: 0.45rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+}
+
+.about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.about-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-links a:hover {
+    text-decoration: underline;
 }
 
 .tracker-summary {
