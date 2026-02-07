@@ -6,6 +6,11 @@ def test_index_page(client):
     assert res.status_code == 200
     assert b"Browse by Category" in res.data
     assert b"Today's Tracker" in res.data
+    assert b"About This App" in res.data
+    assert b"Low-iodine diets" in res.data
+    assert b"https://github.com/elcap123/lid_lookup" in res.data
+    assert b"Data Attribution" in res.data
+    assert b"Daily Threshold" in res.data
 
 
 def test_search_api(client):
@@ -64,3 +69,20 @@ def test_tracker_auto_reset(client):
     res = client.get("/api/tracker?local_date=2026-02-08")
     data = res.get_json()
     assert data["count"] == 0
+
+
+def test_tracker_item_limit(client):
+    search = client.get("/api/search?q=milk")
+    food_id = search.get_json()[0]["id"]
+
+    with client.session_transaction() as sess:
+        sess["tracker"] = {str(i): 1 for i in range(100, 160)}
+        sess["tracker_date"] = "2026-02-07"
+
+    res = client.post(
+        "/api/tracker/add",
+        json={"food_id": food_id, "local_date": "2026-02-07"},
+    )
+    assert res.status_code == 400
+    data = res.get_json()
+    assert data["error"] == "tracker item limit reached"

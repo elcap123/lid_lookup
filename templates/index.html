@@ -183,6 +183,7 @@
 
         let debounceTimer;
         let currentLocalDate = getLocalDateString();
+        let trackerItemCount = 0;
 
         tabButtons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -199,6 +200,7 @@
         function renderResults(foods, title) {
             resultsTitle.textContent = title;
             resultsBody.innerHTML = '';
+            const atLimit = trackerItemCount >= 60;
 
             if (foods.length === 0) {
                 noResults.classList.remove('hidden');
@@ -225,7 +227,10 @@
                             <span class="result-divider">/</span>
                             <span class="result-serving">${food.serving_size} ${food.serving_measure}</span>
                         </td>
-                        <td><button class="track-btn" data-food-id="${food.id}">Add</button></td>
+                        <td>
+                            <button class="track-btn" data-food-id="${food.id}" ${atLimit ? 'disabled' : ''}>Add</button>
+                            ${atLimit ? '<div class="inline-limit">Limit reached</div>' : ''}
+                        </td>
                     `;
                     resultsBody.appendChild(tr);
                 });
@@ -261,6 +266,7 @@
             summaryTotal.textContent = `${data.total_iodine.toFixed(1)} mcg`;
             summaryCount.textContent = data.count;
             trackingCount.textContent = data.count;
+            trackerItemCount = data.count;
             const goal = 150;
             const ratio = goal > 0 ? data.total_iodine / goal : 0;
             const percent = Math.min(ratio, 1) * 100;

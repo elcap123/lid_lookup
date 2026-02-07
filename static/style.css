@@ -379,6 +379,17 @@ tr:hover {
     background: #f3eee7;
 }
 
+.track-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.inline-limit {
+    font-size: 0.7rem;
+    color: var(--accent-2);
+    margin-top: 0.25rem;
+}
+
 .quantity-input {
     width: 70px;
     padding: 0.3rem 0.5rem;
