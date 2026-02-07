@@ -38,7 +38,7 @@ class Food:
     @classmethod
     def from_db_row(cls, row: Mapping[str, Any]) -> "Food":
         return cls(
-            id=row.get("id"),
+            id=row["id"] if "id" in row.keys() else None,
             description=row["description"],
             category=row["category"],
             serving_size=row["serving_size"],
