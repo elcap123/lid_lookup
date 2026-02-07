@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f5f7fa;
+    background: #f4f6fb;
     color: #1a1a2e;
     min-height: 100vh;
 }
@@ -29,27 +29,37 @@ header h1 {
 }
 
 main {
-    max-width: 960px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    padding: 1.75rem 1rem 2.5rem;
+}
+
+.workflow {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(35, 42, 63, 0.08);
+    margin-bottom: 1.75rem;
 }
 
 .search-container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 #search-input {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1rem;
     font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid #e1e4ef;
+    border-radius: 12px;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #f8f9ff;
 }
 
 #search-input:focus {
     border-color: #4a6cf7;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.15);
 }
 
 .categories h2 {
@@ -62,7 +72,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .category-btn {
@@ -88,15 +97,25 @@ main {
     border-color: #4a6cf7;
 }
 
+.results-cart-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr);
+    gap: 1.75rem;
+    align-items: start;
+}
+
 .results-section {
-    margin-top: 1rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(35, 42, 63, 0.08);
 }
 
 .results-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.85rem;
 }
 
 .results-header h2 {
@@ -118,13 +137,29 @@ main {
     background: #f0f0f0;
 }
 
+.track-btn,
+.remove-btn {
+    padding: 0.35rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #444;
+}
+
+.track-btn:hover,
+.remove-btn:hover {
+    background: #f0f0f0;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 thead {
@@ -199,6 +234,35 @@ tr:hover {
     display: none;
 }
 
+.tracker-section {
+    position: sticky;
+    top: 1.5rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(35, 42, 63, 0.08);
+    margin-top: 0;
+}
+
+.tracker-total-label {
+    text-align: right;
+    font-weight: 600;
+    color: #444;
+}
+
+.tracker-total-value {
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.quantity-input {
+    width: 70px;
+    padding: 0.25rem 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.4rem;
@@ -212,5 +276,17 @@ tr:hover {
     .category-btn {
         font-size: 0.78rem;
         padding: 0.35rem 0.7rem;
+    }
+
+    .workflow {
+        padding: 1rem;
+    }
+
+    .results-cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .tracker-section {
+        position: static;
     }
 }

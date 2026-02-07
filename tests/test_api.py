@@ -5,6 +5,7 @@ def test_index_page(client):
     res = client.get("/")
     assert res.status_code == 200
     assert b"Browse by Category" in res.data
+    assert b"Daily Tracker" in res.data
 
 
 def test_search_api(client):

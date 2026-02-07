@@ -13,6 +13,8 @@ class Food:
     iodine_mcg: float
     min: Optional[float]
     max: Optional[float]
+    standardized_quantity: Optional[float]
+    standardized_unit: Optional[str]
 
     @classmethod
     def from_row(cls, row: dict[str, Any]) -> "Food":
@@ -27,6 +29,8 @@ class Food:
             iodine_mcg=float(row["Iodine (mcg/serving)"]),
             min=min_val,
             max=max_val,
+            standardized_quantity=None,
+            standardized_unit=None,
         )
 
     @classmethod
@@ -39,6 +43,8 @@ class Food:
             iodine_mcg=float(row["iodine_mcg"]),
             min=row["min"],
             max=row["max"],
+            standardized_quantity=row["standardized_quantity"],
+            standardized_unit=row["standardized_unit"],
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -50,4 +56,6 @@ class Food:
             "iodine_mcg": self.iodine_mcg,
             "min": self.min,
             "max": self.max,
+            "standardized_quantity": self.standardized_quantity,
+            "standardized_unit": self.standardized_unit,
         }
