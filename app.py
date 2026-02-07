@@ -1,68 +1,24 @@
-import csv
 import os
-from flask import Flask, render_template, request, jsonify
+from flask import Flask
 
-app = Flask(__name__)
-
-FOODS = []
-CATEGORIES = []
-FOODS_BY_CATEGORY = {}
+from controllers.food_controller import create_food_api
+from data.food_store import init_db
+from views.main_view import create_main_view
 
 
-def parse_csv():
-    foods = []
-    categories = []
-    foods_by_category = {}
+def create_app() -> Flask:
+    app = Flask(__name__)
 
-    csv_path = os.path.join(os.path.dirname(__file__), "iodine_data.csv")
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            cat = row["Category"]
-            min_val = float(row["Min"]) if row["Min"] else None
-            max_val = float(row["Max"]) if row["Max"] else None
+    base_dir = os.path.dirname(__file__)
+    csv_path = os.path.join(base_dir, "iodine_data.csv")
+    db_path = os.path.join(base_dir, "iodine.db")
+    food_repo = init_db(csv_path, db_path)
 
-            food = {
-                "description": row["Description"],
-                "category": cat,
-                "serving_size": row["Serving Size"],
-                "serving_measure": row["Serving Measure"],
-                "iodine_mcg": float(row["Iodine (mcg/serving)"]),
-                "min": min_val,
-                "max": max_val,
-            }
-            foods.append(food)
+    app.register_blueprint(create_main_view(food_repo))
+    app.register_blueprint(create_food_api(food_repo))
 
-            if cat not in foods_by_category:
-                categories.append(cat)
-                foods_by_category[cat] = []
-            foods_by_category[cat].append(food)
-
-    return foods, categories, foods_by_category
-
-
-FOODS, CATEGORIES, FOODS_BY_CATEGORY = parse_csv()
-
-
-@app.route("/")
-def index():
-    return render_template("index.html", categories=CATEGORIES)
-
-
-@app.route("/api/search")
-def search():
-    query = request.args.get("q", "").strip().lower()
-    if not query:
-        return jsonify([])
-    results = [f for f in FOODS if query in f["description"].lower()]
-    return jsonify(results)
-
-
-@app.route("/api/category/<category_name>")
-def category(category_name):
-    items = FOODS_BY_CATEGORY.get(category_name, [])
-    return jsonify(items)
+    return app
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    create_app().run(debug=True, port=5001)
