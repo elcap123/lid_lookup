@@ -1,0 +1,479 @@
+Category,Description,Serving Size,Serving Measure,Serving Weight (g),Iodine (mcg/serving),Min,Max
+Dairy and Eggs,"Butter, salted",1,tbsp,14,0.6,0.5,0.8
+Dairy and Eggs,"Cheese product, made with 2% reduced fat milk",1,oz slice,30,16,,
+Dairy and Eggs,"Cheese, American, processed",1,oz slice,30,17,8.6,34
+Dairy and Eggs,"Cheese, cheddar (sharp/mild)",1,oz slice,30,14,8.1,32
+Dairy and Eggs,"Cheese, feta, whole milk, crumbled",0.25,cup,30,15,9.1,23
+Dairy and Eggs,"Cheese, Monterey Jack",1,oz slice,30,12,3.7,23
+Dairy and Eggs,"Cheese, mozzarella",1,oz slice,30,15,8.1,20
+Dairy and Eggs,"Cheese, parmesan, grated",1,tbsp,5,4.1,2.3,8.8
+Dairy and Eggs,"Cheese, processed, Swiss, low fat",1,oz slice,30,18,,
+Dairy and Eggs,"Cheese, provolone",1,oz,30,19,12,25
+Dairy and Eggs,"Cheese, ricotta, whole milk",0.25,cup,55,36,,
+Dairy and Eggs,"Cheese, Swiss",1,oz slice,30,41,9.9,132
+Dairy and Eggs,"Cheese, queso cotija",1,oz,30,19,5.4,34
+Dairy and Eggs,"Cheese, queso fresco",1,oz,30,24,7.2,38
+Dairy and Eggs,"Cheese, queso oaxaca",1,oz,30,14,3.7,41
+Dairy and Eggs,"Cottage cheese, creamed, reduced fat",0.50,cup,110,40,28,52
+Dairy and Eggs,"Cottage cheese, full fat, small or large curd",0.50,cup,110,50,22,69
+Dairy and Eggs,Cream cheese,2,tbsp,30,11,6.4,17
+Dairy and Eggs,"Cream substitute, non-dairy, fluid",1,tbsp,15,0.1,0.1,0.2
+Dairy and Eggs,"Cream, heavy whipping, fluid",1,tbsp,15,3.1,0.8,4.4
+Dairy and Eggs,"Cream, half & half",2,fl oz,30,8.8,5.4,14
+Dairy and Eggs,"Egg, white, dried, stabilized, glucose reduced",1,tbsp,7,2.4,1.5,4.1
+Dairy and Eggs,"Egg, white, raw, frozen, pasteurized",0.25,cup,61,0.9,0.9,0.9
+Dairy and Eggs,"Egg, whole, dried",7,tsp,12.5,34,25,51
+Dairy and Eggs,"Egg, whole, raw, fresh",1,large,50,25,14,58
+Dairy and Eggs,"Egg, whole, raw, frozen, pasteurized",0.25,cup,61,38,28,49
+Dairy and Eggs,"Egg, yolk, dried",0.33,cup,22.5,79,59,98
+Dairy and Eggs,"Egg, yolk, raw, frozen, pasteurized",0.25,cup,61,108,46,163
+Dairy and Eggs,"Eggs, hard-boiled",1,large,50,31,7.2,60
+Dairy and Eggs,"Eggs, scrambled with oil",0.50,cup,110,47,22,63
+Dairy and Eggs,"Ice cream, chocolate",0.67,cup,88,28,21,37
+Dairy and Eggs,"Ice cream, lowfat, vanilla",0.67,cup,91,41,25,51
+Dairy and Eggs,"Ice cream, regular (not lowfat), vanilla",0.67,cup,88,33,23,47
+Dairy and Eggs,"Milk, buttermilk, lowfat",1,cup,244,83,63,104
+Dairy and Eggs,"Milk, chocolate, lowfat, fluid",1,cup,250,74,43,110
+Dairy and Eggs,"Milk, reduced fat (2%), fluid",1,cup,244,87,49,251
+Dairy and Eggs,"Milk, lowfat (1%), fluid",1,cup,244,88,32,208
+Dairy and Eggs,"Milk, skim, fluid",1,cup,245,84,38,160
+Dairy and Eggs,"Milk, whole, fluid",1,cup,244,82,42,205
+Dairy and Eggs,Sour cream,2,tbsp,29,9.0,6.3,14
+Dairy and Eggs,"Sour cream dip, any flavor",2,tbsp,30,7.6,4.8,9.4
+Dairy and Eggs,"Yogurt, frozen, vanilla",0.67,cup,116,53,30,88
+Dairy and Eggs,"Yogurt, Greek, whole milk, plain",0.75,cup,170,72,28,135
+Dairy and Eggs,"Yogurt, Greek, plain, nonfat",0.75,cup,170,87,77,95
+Dairy and Eggs,"Yogurt, Greek, strawberry, lowfat",0.75,cup,170,71,,
+Dairy and Eggs,"Yogurt, Greek, strawberry, nonfat",0.75,cup,170,70,67,74
+Dairy and Eggs,"Yogurt, Greek, vanilla, nonfat",0.75,cup,170,86,84,88
+Dairy and Eggs,"Yogurt, fruit-flavored, lowfat",0.75,cup,170,53,39,72
+Dairy and Eggs,"Yogurt, regular, plain, nonfat",0.75,cup,170,100,57,249
+Dairy and Eggs,"Yogurt, vanilla, lowfat",0.75,cup,170,58,53,63
+Dairy and Eggs,"Yogurt, whole milk, plain",0.75,cup,170,55,37,97
+Spices and Miscellaneous,Baking powder,1/8,tsp,0.6,0.0,,
+Spices and Miscellaneous,Cocoa powder,1,tbsp,7.38,0.0,,
+Spices and Miscellaneous,"Salt, table, iodized",0.25,tsp,1.5,78,51,134
+Spices and Miscellaneous,"Sea salt, iodized",0.25,tsp,1.5,70,34,91
+Spices and Miscellaneous,"Sea salt, non-iodized",0.25,tsp,1.5,0.0,0.0,0.0
+"Soups, Sauces, Gravies and Condiments","Broth, chicken, ready-to-use from carton",8,fl oz,245,1.7,1.2,2.2
+"Soups, Sauces, Gravies and Condiments","Brown gravy, canned or bottled",0.25,cup,58,0.9,0.6,1.2
+"Soups, Sauces, Gravies and Condiments","Dip, salsa con queso (salsa with cheese)",2,tbsp,30,5.7,2.2,14
+"Soups, Sauces, Gravies and Condiments","Ketchup, tomato, bottled",1,tbsp,17,0.2,0.1,0.3
+"Soups, Sauces, Gravies and Condiments","Mustard, yellow, plain",1,tsp,5,0.0,0.0,0.1
+"Soups, Sauces, Gravies and Condiments","Salsa, tomato, bottled",2,tbsp,36,0.6,0.0,1.0
+"Soups, Sauces, Gravies and Condiments","Sauce, barbecue, bottled",2,tbsp,34,0.9,0.3,2.4
+"Soups, Sauces, Gravies and Condiments","Sauce, fish, ready-to-serve",1,tbsp,18,3.7,,
+"Soups, Sauces, Gravies and Condiments","Sauce, soy",1,tbsp,16,0.1,0.1,0.1
+"Soups, Sauces, Gravies and Condiments","Sauce, sweet & sour, bottled",0.25,cup,70,0.5,0.3,1.1
+"Soups, Sauces, Gravies and Condiments","Sauce, tomato pasta, bottled",0.50,cup,132,2.1,1.7,2.8
+"Soups, Sauces, Gravies and Condiments","Soup, bean with bacon/pork, canned, condensed, prepared with water",1,cup,266,0.8,0.3,1.1
+"Soups, Sauces, Gravies and Condiments","Soup, broccoli cheese, canned, ready to eat (RTE)",1,cup,245,11,11,12
+"Soups, Sauces, Gravies and Condiments","Soup, chicken noodle, canned,  ready to eat (RTE)",1,cup,245,2.2,1.7,3.7
+"Soups, Sauces, Gravies and Condiments","Soup, clam chowder, New England, canned,  ready to eat (RTE)",1,cup,245,27,15,49
+"Soups, Sauces, Gravies and Condiments","Soup, clam chowder, New England, canned, condensed, prepared with whole milk",1,cup,245,48,32,66
+"Soups, Sauces, Gravies and Condiments","Soup, cream of mushroom, canned,  ready to eat (RTE)",1,cup,245,5.4,5.1,5.6
+"Soups, Sauces, Gravies and Condiments","Soup, cream of potato, canned,  ready to eat (RTE)",1,cup,245,8.0,7.4,9.1
+"Soups, Sauces, Gravies and Condiments","Soup, ramen noodles, prepared with water",1,cup,245,0.7,0.0,2.2
+"Soups, Sauces, Gravies and Condiments","Soup, tomato, canned,  ready to eat (RTE)",1,cup,245,1.7,0.7,2.7
+"Soups, Sauces, Gravies and Condiments","Soup, vegetable beef, canned,  ready to eat (RTE)",1,cup,245,4.5,2.0,7.1
+"Soups, Sauces, Gravies and Condiments","Soup, vegetable beef, canned, condensed, prepared with water",1,cup,245,2.6,2.0,4.9
+"Soups, Sauces, Gravies and Condiments","Soup, vegetable, canned,  ready to eat (RTE)",1,cup,245,2.2,2.2,2.2
+Baby Foods,"Baby food, apples with berries",0.50,cup,113,0.1,0.0,0.3
+Baby Foods,"Baby food, apples with fruit other than berries",0.50,cup,113,0.2,0.0,0.6
+Baby Foods,"Baby food, applesauce",0.50,cup,113,0.1,0.0,0.2
+Baby Foods,"Baby food, apple and sweet potato with cinnamon, pouch",3.50,oz,99,0.1,0.0,0.3
+Baby Foods,"Baby food, apple, spinach and avocado, bowl/pouch",3.50,oz,99,2.5,2.3,2.7
+Baby Foods,"Baby food, apple, sweet potato and pineapple, pouch",3.50,oz,99,0.5,0.4,0.7
+Baby Foods,"Baby food, apricots with mixed fruit",0.50,cup,113,0.4,0.2,0.5
+Baby Foods,"Baby food, bananas",0.50,cup,113,0.2,0.0,1.9
+Baby Foods,"Baby food, banana and blueberry, pouch",3.50,oz,99,0.6,0.0,0.9
+Baby Foods,"Baby food, banana and strawberry, glass jar",4,oz,113,0.2,0.0,0.5
+Baby Foods,"Baby food, banana, apple and pear, plastic jar",4,oz,113,0.0,0.0,0.0
+Baby Foods,"Baby food, banana, blackberry and blueberry, plastic jar",4,oz,113,0.2,0.0,0.9
+Baby Foods,"Baby food, peaches",0.50,cup,113,0.1,0.0,1.0
+Baby Foods,"Baby food, pears",0.50,cup,113,0.1,0.0,0.1
+Baby Foods,"Baby food, pears and pineapple",0.50,cup,113,0.2,0.0,0.3
+Baby Foods,"Baby food, organic pears and spinach, pouch",3.50,oz,99,0.7,0.5,1.0
+Baby Foods,"Baby food, pear, blueberry, apple and avocado, pouch",3.50,oz,99,0.4,0.3,0.6
+Baby Foods,"Baby food, pear, mango, avocado, pouch",3.50,oz,99,0.1,0.0,0.6
+Baby Foods,"Baby food, plums/prunes with apples or pears",0.50,cup,113,0.6,0.0,2.5
+Baby Foods,"Baby food, prunes",0.50,cup,113,1.2,0.6,2.7
+Baby Foods,"Baby food, mango, carrot and turmeric, bowl",3.75,oz,102,0.7,0.7,0.7
+Baby Foods,"Baby food, mango, glass jar",4,oz,113,0.4,0.3,0.5
+Baby Foods,"Baby food, mango, pouch",3.50,oz,99,0.6,0.6,0.7
+Baby Foods,"Baby food, mango, yellow zucchini, corn and turmeric, pouch",3.50,oz,99,1.4,1.3,1.6
+Baby Foods,"Baby food, juice, apple",4,fl oz,125,1.3,0.0,4.8
+Baby Foods,"Baby food, juice, grape",4,fl oz,118,1.0,0.4,2.1
+Baby Foods,"Baby food, juice, pear",4,fl oz,125,0.3,0.0,1.4
+Baby Foods,"Baby food, juice, mixed fruit",4,fl oz,113,0.0,0.0,0.0
+Baby Foods,"Baby food, carrots",0.50,cup,113,0.5,0.0,1.6
+Baby Foods,"Baby food, green beans",0.50,cup,113,0.4,0.0,1.4
+Baby Foods,"Baby food, peas",0.50,cup,113,0.1,0.0,0.2
+Baby Foods,"Baby food, peas and spinach, glass jar",4,oz,113,0.0,,
+Baby Foods,"Baby food, peas, green beans and avocado, pouch",3.50,oz,99,0.4,0.3,0.5
+Baby Foods,"Baby food, pumpkin, banana, papaya and cardamom, bowl",3.60,oz,102,0.2,0.0,0.3
+Baby Foods,"Baby food, squash",0.50,cup,113,0.4,0.0,1.4
+Baby Foods,"Baby food, sweet potatoes",0.50,cup,113,0.4,0.0,0.9
+Baby Foods,"Baby food, sweet potato, apple and corn, pouch",3.50,oz,99,0.8,0.5,0.9
+Baby Foods,"Baby food, sweet potato, apple and spinach, pouch",3.50,oz,99,1.0,0.8,1.3
+Baby Foods,"Baby food, vegetables, mixed",0.50,cup,113,0.5,0.0,1.0
+Baby Foods,"Baby food, cereal, oatmeal, dry",0.25,cup,15,0.1,0.0,0.4
+Baby Foods,"Baby food, cereal, rice, dry",0.25,cup,15,0.0,0.0,0.0
+Baby Foods,"Baby food, cereal, mixed, dry",0.25,cup,15,0.2,0.0,0.6
+Baby Foods,"Baby food, cereal, mixed, prepared with water",0.50,cup,110,0.0,0.0,0.1
+Baby Foods,"Baby food, cereal, oatmeal with fruit, prepared with water",0.50,cup,110,0.0,0.0,0.1
+Baby Foods,"Baby food, cereal, oatmeal, prepared with water",0.50,cup,110,0.1,0.0,0.4
+Baby Foods,"Baby food, cereal, rice, prepared with water",0.50,cup,110,0.0,0.0,0.3
+Baby Foods,"Baby food, organic yogurt, apple, pumpkin, cinnamon and quinoa, pouch",3.50,oz,99,11,8.7,13
+Baby Foods,"Baby food, fruit yogurt dessert",0.50,cup,113,26,16,36
+Baby Foods,"Baby food, yogurt, peach pear",4,oz,113,37,34,42
+Baby Foods,"Baby food, biscuits, teething",2,"cookies (3"" x 1"")",22,4.4,0.7,6.2
+Baby Foods,"Baby food, cookies, arrowroot",4,cookies,20,1.8,1.2,2.7
+Baby Foods,"Baby food, finger foods, puffed snack",1.50,cup,21,0.1,0.0,0.5
+Baby Foods,"Baby food, finger food, baked product, cereal, fortified",12,pieces,20,1.5,,
+Baby Foods,"Baby food, chicken noodle dinner",0.75,cup,170,0.9,0.0,4.4
+Baby Foods,"Baby food, chicken with rice",0.75,cup,170,1.2,0.0,2.2
+Baby Foods,"Baby food, macaroni and cheese with vegetables",0.75,cup,170,12,7.1,15
+Baby Foods,"Baby food, pasta, tomato and beef",0.75,cup,170,3.5,0.0,7.8
+Baby Foods,"Baby food, ravioli, cheese-filled, with tomato sauce",0.75,cup,170,7.7,6.3,9.9
+Baby Foods,"Baby food, beef and broth/gravy",0.75,cup,170,2.1,0.0,5.1
+Baby Foods,"Baby food, chicken and broth/gravy",0.75,cup,170,47,18,60
+Baby Foods,"Baby food, turkey and broth/gravy",0.75,cup,170,1.8,0.0,4.3
+Baby Foods,"Baby food, turkey and rice",0.75,cup,170,0.8,0.0,3.1
+Baby Foods,"Baby food, turkey, quinoa, apple and sweet potato, pouch",3.50,oz,99,0.7,0.6,0.7
+Baby Foods,"Baby food, vegetables and beef",0.75,cup,170,0.9,0.0,1.9
+Baby Foods,"Baby food, vegetables and chicken",0.75,cup,170,0.9,0.0,1.5
+Baby Foods,"Baby food, vegetables and turkey",0.75,cup,170,3.6,0.0,11
+Baby Foods,"Baby food, infant formula, milk-based, powder",1,scoop,8.8,10,8.8,11
+Baby Foods,"Baby food, infant formula, soy-based, powder",1,scoop,8.9,8.7,8.6,8.7
+Baby Foods,"Baby food, Infant formula, milk-based, iron fortified, ready-to-feed",4,fl oz,123,16,14,20
+Baby Foods,"Baby food, Infant formula, soy-based, ready-to-feed",4,fl oz,123,14,0.7,19
+Baby Foods,"Baby food, water, baby, bottled",4,oz,113,0.0,0.0,0.0
+Fats and Oils,"Margarine, salted",1,tbsp,14,0.2,0.0,0.5
+Fats and Oils,"Mayonnaise, regular, bottled",1,tbsp,15,0.8,0.4,1.1
+Fats and Oils,"Oil, olive",1,tbsp,14,0.0,0.0,0.1
+Fats and Oils,"Oil, vegetable",1,tbsp,14,0.0,0.0,0.0
+Fats and Oils,"Salad dressing, coleslaw, bottled",2,tbsp,38,0.6,,
+Fats and Oils,"Salad dressing, creamy/buttermilk type, low-calorie, bottled",2,tbsp,30,3.8,2.8,4.4
+Fats and Oils,"Salad dressing, creamy/buttermilk type, regular, bottled",2,tbsp,30,2.5,2.1,3.6
+Fats and Oils,"Salad dressing, Italian, regular, bottled",2,tbsp,29,0.2,0.1,0.5
+Fats and Oils,"Salad dressing, ranch, low-calorie, bottled",2,tbsp,28,2.2,2.1,2.3
+Fats and Oils,"Salad dressing, ranch, regular, bottled",2,tbsp,30,3.0,1.8,5.7
+Fruit,"Apple, red, with peel, raw",1,"small (2 3/4"" diameter)",149,0.1,0.0,0.9
+Fruit,"Applesauce, bottled",0.50,cup,146,0.2,0.0,0.6
+Fruit,"Apricots, canned in heavy/light syrup",0.50,cup,127,7.8,1.7,20
+Fruit,"Avocado, raw",0.33,"cup, cubed",50,0.1,0.0,1.7
+Fruit,"Banana, raw",1,large,136,0.3,0.0,4.8
+Fruit,"Blueberries, raw",1,cup,148,0.4,0.0,1.8
+Fruit,"Cantaloupe, raw/frozen",1,"cup, diced",156,0.5,0.0,2.0
+Fruit,"Fruit cocktail, canned in light syrup",0.50,cup,121,4.7,0.0,13
+Fruit,"Grapefruit, raw",0.67,cup,154,0.2,0.0,1.1
+Fruit,"Grapes, seedless, red/green, raw",1,cup,151,0.6,0.0,1.7
+Fruit,"Mango, raw/frozen",0.88,cup,140,0.1,0.0,0.6
+Fruit,"Olives, black, pitted",3,large,15,0.3,0.0,0.8
+Fruit,"Orange, raw",1,"medium (2 5/8"" diameter)",131,0.2,0.0,1.3
+Fruit,"Peach, canned in light/medium syrup",0.50,cup,124,7.7,1.6,13
+Fruit,"Peach, raw/frozen",1,"medium (2-2/3"" diameter)",150,0.3,0.0,3.9
+Fruit,"Pear, canned in light syrup",0.50,cup,126,0.1,0.1,0.3
+Fruit,"Pear, with peel, raw",1,small,148,0.1,0.0,1.0
+Fruit,"Pineapple, canned in juice",0.75,cup,135,2.5,0.8,9.6
+Fruit,"Pineapple, raw/frozen",0.75,cup,123,0.4,0.0,2.8
+Fruit,Raisins,0.25,"cup, packed",41,0.7,0.0,1.4
+Fruit,"Strawberries, raw/frozen",0.75,cup sliced,124,0.4,0.0,2.0
+Fruit,"Watermelon, raw/frozen",1.75,"cup, diced",266,0.3,0.0,2.1
+Vegetables,"Asparagus, fresh/frozen, boiled",0.50,"cup, cuts",90,0.8,0.0,3.5
+Vegetables,"Beets, canned",0.50,"cup, sliced",85,0.3,0.1,1.0
+Vegetables,"Broccoli, fresh/frozen, boiled",0.50,"cup, chopped",78,0.4,0.0,2.1
+Vegetables,"Brussels sprouts, fresh/frozen, boiled",0.50,cup,78,0.0,0.0,0.4
+Vegetables,"Cabbage, fresh, boiled",0.50,"cup, shredded",75,0.1,0.0,0.2
+Vegetables,"Cabbage, raw",1,"cup, chopped",89,0.0,0.0,0.0
+Vegetables,"Carrot, baby, raw",8,medium,80,0.5,0.0,2.9
+Vegetables,"Carrot, fresh, peeled, boiled",0.50,"cup, sliced",78,0.4,0.0,1.2
+Vegetables,"Cauliflower, fresh/frozen, boiled",0.67,"cup, pieces",83,0.5,0.0,2.5
+Vegetables,"Celery, raw",0.75,cup,75,1.3,0.0,6.7
+Vegetables,"Collards, fresh/frozen, boiled",0.50,cup,95,0.7,0.0,7.0
+Vegetables,"Corn, canned, drained solids",0.50,cup,82,0.3,0.0,0.7
+Vegetables,"Corn, frozen, boiled",0.50,cup,82,0.2,0.0,5.7
+Vegetables,"Cucumber, peeled, raw",0.67,cup,89,0.4,0.0,1.9
+Vegetables,"Eggplant, fresh, without peel, boiled",0.75,cup,75,0.2,0.0,0.8
+Vegetables,"Eggplant, with peel, baked",0.75,cup,75,0.4,0.0,1.1
+Vegetables,"Garlic, raw",1.50,tsp,4,0.0,0.0,0.1
+Vegetables,"Green beans, canned, drained solids",0.50,cup,77,0.2,0.0,0.9
+Vegetables,"Green beans, fresh/frozen, boiled",0.67,cup,89,0.6,0.0,2.3
+Vegetables,"Kale, fresh, pan-cooked",0.75,cup,85,1.6,0.0,3.7
+Vegetables,"Lettuce, iceberg, raw",1,"cup, shredded",72,0.1,0.0,1.3
+Vegetables,"Lettuce, leaf, raw",2,"cups, shredded",72,0.8,0.0,5.8
+Vegetables,"Lima beans, immature, frozen, boiled",0.50,cup,85,0.2,0.0,0.8
+Vegetables,"Mixed vegetables, frozen, boiled",0.50,cup,91,0.2,0.0,0.8
+Vegetables,"Mushrooms, raw",1.25,cup,87,0.3,0.0,1.0
+Vegetables,"Mushrooms, canned, drained solids",0.67,cup,95,0.0,,
+Vegetables,"Nori, seaweed, dried",2,"tbsp, flaked",5,116,82,143
+Vegetables,"Okra, fresh/frozen, boiled",0.50,cup,80,0.8,0.2,1.4
+Vegetables,"Onion, mature, raw",0.50,"cup, chopped",80,0.2,0.0,1.3
+Vegetables,"Peas, green, fresh/frozen, boiled",0.50,cup,80,0.0,0.0,0.4
+Vegetables,"Pepper, bell, green, raw",1,"cup, sliced",92,0.2,0.0,2.5
+Vegetables,"Pickles, dill, cucumber",4,slices,28,0.2,0.1,0.5
+Vegetables,"Potato, peeled, boiled1",0.50,cup,117,0.0,0.0,0.7
+Vegetables,"Potato, with peel, baked",1,small,138,0.7,0.0,9.7
+Vegetables,"Potatoes, mashed, prepared from fresh",0.67,cup,140,8.6,5.3,20
+Vegetables,"Sauce, tomato, canned/bottled",0.25,cup,61,0.5,0.0,0.9
+Vegetables,"Spinach, fresh/frozen, boiled",0.50,cup,90,3.5,0.9,7.3
+Vegetables,"Spinach, raw",3,cups,90,6.0,1.4,36
+Vegetables,"Squash, summer, fresh/frozen, boiled",0.50,"cup, sliced",90,0.2,0.1,0.5
+Vegetables,"Squash, summer, zucchini, fresh/frozen, boiled",0.50,"cup, sliced",90,0.5,0.0,4.1
+Vegetables,"Squash, winter (Hubbard or acorn), fresh/frozen, boiled",0.67,cup,137,1.1,0.0,7.3
+Vegetables,"Sweet potato, baked, peel removed",1,"medium (2"" diameter, 5"" long)",114,1.7,0.0,7.1
+Vegetables,"Sweet potato, canned",0.50,cup,127,0.8,0.0,2.9
+Vegetables,"Tomato, raw",0.50,"cup, chopped",90,0.2,0.0,1.1
+Vegetables,"Turnip, fresh/frozen, boiled",0.50,cup,78,0.2,0.0,0.4
+Legumes,"Beans, black, canned, drained",0.33,cup,80,0.0,0.0,0.0
+Legumes,"Beans, garbanzo (chickpeas), canned, drained solids",0.67,cup,90,0.0,,
+Legumes,"Beans, kidney, canned, drained",0.33,cup,89,0.0,0.0,0.0
+Legumes,"Beans, pinto, canned, drained",0.50,cup,85,0.8,0.0,2.4
+Legumes,"Beans, pinto, from dry, boiled",0.50,cup,85,0.0,0.0,0.2
+Legumes,"Beans, refried, canned",0.50,cup,119,1.0,0.0,3.0
+Legumes,"Beans, white, canned, drained",0.50,cup,90,0.8,0.0,2.3
+Legumes,"Beans, white, from dry, boiled",0.50,cup,90,0.1,0.0,0.4
+Legumes,"Beans, with pork, canned",0.50,cup,126,0.2,0.0,0.6
+Legumes,"Lentils, dry, cooked",0.50,cup,90,0.0,,
+Legumes,"Peanut butter, smooth/creamy",2,tbsp,32,0.1,0.0,0.4
+Legumes,"Peanuts, dry roasted, salted",3,tbsp,27,0.1,0.0,0.3
+Legumes,"Tofu, firm, plain, drained solids",3,oz,85,0.0,,
+Legumes,"Veggie burger, soy based, baked",1,piece,56,5.3,4.4,6.2
+Nuts and Seeds,"Almonds, shelled",0.33,"cup, sliced",30,0.0,0.0,0.0
+Nuts and Seeds,"Nuts, cashew, oil roasted, with salt added",1,oz,28,0.0,,
+Nuts and Seeds,"Seeds, sunflower, shelled, salted, roasted",0.25,cup,32,0.0,0.0,0.3
+Nuts and Seeds,"Walnuts, shelled",0.25,"cup, pieces",30,0.0,0.0,0.0
+Beverages including Juices,"Alcohol, beer",12,fl oz,356,3.1,0.7,7.5
+Beverages including Juices,"Alcohol, distilled, vodka",1,fl oz,42,0.0,0.0,0.0
+Beverages including Juices,"Alcohol, distilled, whiskey/scotch",1,fl oz,42,0.0,0.0,0.0
+Beverages including Juices,"Alcohol, wine, red/white",5,fl oz,148,2.3,1.0,4.9
+Beverages including Juices,"Beverage, almond",8,fl oz,262,1.1,0.2,2.4
+Beverages including Juices,"Beverage, coconut water",12,fl oz,365,2.1,1.5,2.9
+Beverages including Juices,"Beverage, energy",12,fl oz,360,0.5,0.0,1.4
+Beverages including Juices,"Beverage, soy",8,fl oz,243,3.2,0.7,7.3
+Beverages including Juices,"Beverage, soy, shelf stable (with seaweed or seaweed derivative)",8,fl oz,243,12,7.0,17
+Beverages including Juices,"Beverage, sports",12,fl oz,360,0.0,0.0,0.0
+Beverages including Juices,"Beverage, chocolate malt powder, prepared with 1% milk, fortified",8,fl oz,251,71,,
+Beverages including Juices,"Carbonated beverage, cola, low-calorie",12,fl oz,360,1.1,0.0,2.2
+Beverages including Juices,"Carbonated beverage, cola, regular",12,fl oz,360,0.7,0.0,1.8
+Beverages including Juices,"Carbonated beverage, fruit-flavored",12,fl oz,360,0.5,0.0,1.8
+Beverages including Juices,"Coffee, brewed from ground",12,fl oz,360,0.4,0.0,1.1
+Beverages including Juices,"Coffee, decaffeinated, from ground",12,fl oz,360,0.7,0.4,1.4
+Beverages including Juices,"Cranberry juice cocktail, canned/bottled",8,fl oz,253,0.6,0.0,2.0
+Beverages including Juices,"Fruit drink (5% - 25% juice), canned/bottled",8,fl oz,238,1.6,0.7,2.9
+Beverages including Juices,"Fruit drink from powder, reconstituted",8,fl oz,262,0.1,0.0,1.3
+Beverages including Juices,"Juice, apple, bottled",8,fl oz,248,1.1,0.0,4.7
+Beverages including Juices,"Juice, fruit blend (100% juice), canned/bottled",8,fl oz,250,2.0,1.0,3.5
+Beverages including Juices,"Juice, grape, bottled",8,fl oz,253,0.9,0.3,2.0
+Beverages including Juices,"Juice, grapefruit, bottle/carton",8,fl oz,246,13,0.0,113
+Beverages including Juices,"Juice, lemon, bottled",1,tsp,5,0.1,0.0,0.2
+Beverages including Juices,"Juice, orange, bottle/carton",8,fl oz,249,21,4.0,60
+Beverages including Juices,"Juice, orange, from frozen concentrate, reconstituted",8,fl oz,249,1.0,0.5,1.7
+Beverages including Juices,"Juice, pineapple, canned",8,fl oz,250,0.5,0.0,1.5
+Beverages including Juices,"Juice, prune, bottled",8,fl oz,256,3.4,1.0,8.2
+Beverages including Juices,"Juice, tomato, bottled",8,fl oz,243,2.7,1.7,3.4
+Beverages including Juices,"Juice, tomato-vegetable, bottled",8,fl oz,253,1.9,1.0,3.3
+Beverages including Juices,"Lemonade, from frozen concentrate, reconstituted",8,fl oz,247,0.3,0.0,0.5
+Beverages including Juices,"Meal replacement, liquid, ready to drink (RTD), assorted flavors",8,fl oz,252,98,45,360
+Beverages including Juices,"Powder, protein",3,tbsp,18.2,18,12,27
+Beverages including Juices,"Tea, brewed from tea bag",12,fl oz,360,0.4,0.0,1.4
+Beverages including Juices,"Tea, decaffeinated, brewed from tea bag",12,fl oz,360,0.5,0.0,0.7
+Beverages including Juices,"Water, mineral/spring, bottled",12,fl oz,360,0.7,0.0,4.7
+Beverages including Juices,"Water, tap, drinking2",12,fl oz,360,3.9,0.0,39
+Seafood,"Crustaceans, crab, blue, canned",3,oz,85,32,23,44
+Seafood,"Crustaceans, crab, blue, lump, pasteurized",4,oz,110,49,32,67
+Seafood,"Crustaceans, lobster, northern, cooked, moist heat",3,oz,85,157,118,192
+Seafood,"Crustaceans, shrimp, mixed species, raw",4,oz,110,16,4.5,42
+Seafood,"Crustaceans, shrimp, precooked, shell removed, no tail",3,oz,85,13,2.9,47
+Seafood,"Fish sticks or patty, frozen, oven-cooked",3,oz,85,57,21,114
+Seafood,"Fish, catfish, farmed, raw",4,oz,110,2.1,1.3,3.9
+Seafood,"Fish, catfish, pan-cooked with oil",3,oz,85,2.7,0.0,6.9
+Seafood,"Fish, cod, Atlantic, wild, raw",4,oz,110,125,26,397
+Seafood,"Fish, cod, baked",3,oz,85,146,75,281
+Seafood,"Fish, cod, Pacific, raw",4,oz,110,144,56,265
+Seafood,"Fish, flatfish (flounder and sole species), raw",4,oz,110,16,12,22
+Seafood,"Fish, haddock, raw",4,oz,110,250,152,345
+Seafood,"Fish, halibut, Atlantic and Pacific, raw",4,oz,110,8.8,8.1,11
+Seafood,"Fish, ocean perch, Atlantic, raw",4,oz,110,10,8.1,13
+Seafood,"Fish, pollock, Alaska, raw",4,oz,110,48,41,59
+Seafood,"Fish, rockfish, Pacific, mixed species, raw",4,oz,110,15,12,22
+Seafood,"Fish, salmon, Atlantic, farmed, raw",4,oz,110,3.6,1.6,6.1
+Seafood,"Fish, salmon, chum, dried (Alaska Native)",1,portion,30,12,,
+Seafood,"Fish, salmon, pink, canned, drained solids",3,oz,85,12,6.3,17
+Seafood,"Fish, salmon, pink, raw",4,oz,110,29,13,55
+Seafood,"Fish, salmon, sockeye, canned, drained solids",3,oz,85,19,,
+Seafood,"Fish, salmon, sockeye, raw",4,oz,110,16,13,19
+Seafood,"Fish, salmon, sockeye, wild, raw",4,oz,110,20,17,23
+Seafood,"Fish, salmon, steaks/fillets, baked",3,oz,85,11,0.0,25
+Seafood,"Fish, smelt, dried (Alaska Native)",1,portion,30,65,,
+Seafood,"Fish, swai, cooked",3,oz,85,6.3,6.3,6.3
+Seafood,"Fish, swordfish, raw",4,oz,110,21,18,27
+Seafood,"Fish, tilapia, baked",3,oz,85,5.8,0.0,69
+Seafood,"Fish, tilapia, farmed, raw",4,oz,110,4.6,1.0,12
+Seafood,"Fish, trout, rainbow, wild, raw",4,oz,110,8.1,,
+Seafood,"Fish, tuna, canned in water, drained",3,oz,85,7.4,5.6,10
+Seafood,"Fish, tuna, fresh, bluefin, cooked, dry heat",3,oz,85,20,15,24
+Seafood,"Fish, tuna, fresh, bluefin, raw",4,oz,110,19,13,28
+Seafood,"Fish, whitefish, broad, including head, eyes, cheeks and soft bones (Alaska Native), raw",4,oz,110,37,,
+Seafood,"Mollusks, clam, mixed species, canned, drained solids",3,oz,85,57,49,66
+Seafood,"Mollusks, oyster, eastern, wild, cooked, moist heat",3,oz,85,93,69,112
+Seafood,"Mollusks, scallop, mixed species, raw",4,oz,110,8.1,8.1,8.1
+Grains,"Flour, white, all-purpose",0.25,cup,30,0.3,0.0,0.8
+Grains,"Noodles, egg, enriched, boiled",0.75,cup,120,4.4,2.0,6.5
+Grains,"Pasta, enriched, boiled in water with iodized salt using amount per pasta label",1,cup,132,30,17,37
+Grains,"Pasta, rice noodles, cooked",0.75,cup,132,1.1,0.0,3.4
+Grains,"Pasta, spaghetti, enriched, boiled",1,cup,124,0.4,0.0,3.5
+Grains,"Pasta, whole wheat, cooked",1,cup,151,0.0,0.0,0.0
+Grains,"Quinoa, cooked",0.75,cup,140,0.0,0.0,0.0
+Grains,"Rice, brown, cooked",0.75,cup,146,0.0,0.0,0.0
+Grains,"Rice, white, enriched, cooked",0.75,cup,140,0.3,0.0,8.8
+Cereals,"Cereal, bran with raisins",0.75,cup,45,0.3,0.0,0.8
+Cereals,"Cereal, corn flakes",1.50,cup,42,0.1,0.0,0.5
+Cereals,"Cereal, corn/hominy grits, enriched, cooked",1,cup,257,0.1,0.0,0.5
+Cereals,"Cereal, cream of wheat (farina), enriched, cooked",1,cup,251,0.1,0.0,0.5
+Cereals,"Cereal, crisped rice",1.33,cup,37,0.1,0.0,0.3
+Cereals,"Cereal, fruit-flavored, sweetened4",1,cup,36,0.2,0.1,0.3
+Cereals,"Cereal, granola",0.50,cup,48,5.2,4.0,6.2
+Cereals,"Cereal, granola with raisins",0.33,cup,34,4.8,3.2,6.9
+Cereals,"Cereal, oat ring",1.50,cup,42,0.3,0.0,0.5
+Cereals,"Cereal, oat ring, honey",1.50,cup,42,0.0,0.0,0.0
+Cereals,"Cereal, oatmeal, plain, cooked",1,cup,234,0.5,0.0,2.6
+Cereals,"Cereal, shredded wheat",0.75,cup,36,0.0,0.0,0.2
+Cereals,"Cereal, shredded wheat, frosted",0.75,cup,40,0.0,0.0,0.0
+Cereals,"Cereal, whole wheat, cooked",1,cup,242,0.0,0.0,0.0
+Baked Products,"Bagel, plain, toasted",1,"medium (3.5"" to 4"" diameter)",105,0.7,0.0,9.8
+Baked Products,"Biscuits, refrigerated-type, baked",1,biscuit,51,1.2,0.4,2.9
+Baked Products,"Bread, multigrain5",2,slices,50,0.9,0.0,2.2
+Baked Products,"Bread, rye",2,slices,50,0.3,0.0,0.5
+Baked Products,"Bread, white roll/bun (hamburger/hotdog)6",1,bun,50,1.2,0.0,5.0
+Baked Products,"Bread, white roll/bun (hamburger/hotdog), with iodate dough conditioner",1,bun,50,530,240,865
+Baked Products,"Bread, white, enriched, pre-sliced7",2,slices,50,0.9,0.0,4.8
+Baked Products,"Bread, white, enriched, pre-sliced, with iodate dough conditioner",2,slices,50,296,175,589
+Baked Products,"Bread, whole-wheat, commercially prepared8",2,slices,50,1.0,0.0,4.8
+Baked Products,"Bread, whole-wheat, commercially prepared, with iodate dough conditioner",2,slices,50,273,170,505
+Baked Products,Breadcrumbs,0.25,cup,30,34,14,54
+Baked Products,Breakfast tart/toaster pastry9,1,"pastry (4-1/4"" diameter)",110,2.5,0.0,5.9
+Baked Products,"Brownie, commercially prepared",1,"2 3/4"" square",56,5.5,0.5,24
+Baked Products,"Cake, chocolate with chocolate icing, commercially prepared10",1,piece (1/8 of 18 oz  cake),64,5.2,2.0,11
+Baked Products,"Cake, white with white icing, commercially prepared11",1,piece (1/8 of 18 oz  cake),64,8.4,1.7,46
+Baked Products,"Cake, yellow with chocolate frosting, commercially prepared",1,piece (1/8 of 18 oz  cake),64,4.7,4.7,4.7
+Baked Products,"Cinnamon roll, from package, iced",1,roll,65,2.5,0.0,7.8
+Baked Products,"Cookies, from package, chocolate chip",2,cookies,30,0.3,0.0,0.8
+Baked Products,"Cookies, from package, sandwich with crème filling",3,cookies,36,0.1,0.0,0.4
+Baked Products,"Cookies, from package, sugar12",2,cookies,34,1.6,0.0,3.0
+Baked Products,"Cornbread, homemade",1,piece,65,17,8.0,32
+Baked Products,"Cornbread, from dry mix, prepared with 2% milk, margarine, and eggs",1,piece,60,10.0,,
+Baked Products,"Crackers, butter-type",10,crackers,32,0.1,0.0,0.4
+Baked Products,"Crackers, cheese, regular",30,"crackers, 1"" square",30,3.2,1.4,5.4
+Baked Products,"Crackers, graham",2,crackers,30,0.3,0.0,0.8
+Baked Products,"Crackers, saltine",10,"crackers, square",30,0.1,0.0,0.2
+Baked Products,"Doughnut, cake-type, plain, commercially prepared",1,"medium (3-1/4"" diameter)",55,8.4,2.8,23
+Baked Products,"English muffin, plain, toasted",1,muffin,55,0.6,0.0,8.5
+Baked Products,"Muffin, blueberry, commercially prepared",1,"small (2-3/4"" diameter)",66,8.2,3.5,23
+Baked Products,"Pancakes, frozen, heated",2,pancakes,96,6.4,3.1,10.0
+Baked Products,"Pie crust, commercially prepared",1,"slice (1/8 of 9"" diameter)",19,0.2,0.0,0.7
+Baked Products,"Pie, apple, fresh/frozen, commercially prepared",1,"slice (1/8 of 9"" diameter)",125,0.5,0.0,1.5
+Baked Products,"Pie, pumpkin, fresh/frozen, commercially prepared",1,slice,133,29,23,39
+Baked Products,Sweet roll/Danish pastry,1,"pastry (4-1/4"" diameter)",65,3.9,2.9,5.0
+Baked Products,"Tortilla, corn",2,tortillas,48,0.2,0.0,1.7
+Baked Products,"Tortilla, flour",1,tortilla,49,0.2,0.0,3.7
+Sweets and Snacks,"Candy, fruit snacks",0.75,cup,30,0.5,0.0,1.5
+Sweets and Snacks,"Candy bar (chocolate, nougat, and nuts)",1,bar,28,4.9,3.8,6.1
+Sweets and Snacks,"Candy bar, milk chocolate, plain",1,bar,28,13,9.8,15
+Sweets and Snacks,"Candy, hard, assorted flavors",3,pieces,18,1.4,0.0,6.4
+Sweets and Snacks,"Chips, potato",22,chips,28,0.7,0.0,2.5
+Sweets and Snacks,"Chips, potato, made from dried potatoes, cheese-flavor",22,chips,28,0.4,,
+Sweets and Snacks,"Chips, corn/tortilla",1,oz,28,0.5,0.0,1.3
+Sweets and Snacks,"Gelatin dessert, assorted flavors, prepared",0.50,cup,135,0.7,0.1,1.9
+Sweets and Snacks,Granola bar,1,bar,28,0.5,0.0,0.8
+Sweets and Snacks,"Granola bar, with raisins",1,bar,28,0.5,0.2,1.3
+Sweets and Snacks,Honey,1,tbsp,21,0.1,0.1,0.4
+Sweets and Snacks,"Jelly, assorted flavors",1,tbsp,21,0.2,0.0,0.4
+Sweets and Snacks,"Popsicle, fruit-flavored13",1.75,oz,52,0.6,0.2,1.3
+Sweets and Snacks,"Popcorn, microwave, butter-flavored",4,cups,32,0.1,0.0,0.8
+Sweets and Snacks,"Pretzels, hard, salted",5,twists,30,0.1,0.0,0.4
+Sweets and Snacks,"Pudding, ready-to-eat, chocolate",0.50,cup,108,15,14,16
+Sweets and Snacks,"Pudding, ready-to-eat, assorted flavors  other than chocolate",0.50,cup,108,5.1,3.2,8.2
+Sweets and Snacks,"Pudding, rice, ready-to-eat",0.50,cup,92,25,,
+Sweets and Snacks,"Sherbet, fruit-flavored14",0.67,cup,100,15,14,15
+Sweets and Snacks,"Sorbet, fruit-flavored",0.67,cup,100,0.8,0.0,1.8
+Sweets and Snacks,"Sugar, white, granulated",2,tsp,8,0.0,0.0,0.0
+Sweets and Snacks,"Syrup, chocolate",2,tbsp,38,0.2,0.1,0.8
+Sweets and Snacks,"Syrup, pancake",2,tbsp,40,0.1,0.0,0.2
+Mixed Dishes,"Beef stroganoff with noodles, homemade",1,cup,256,16,14,21
+Mixed Dishes,"Chicken potpie, frozen, heated",1,single-serve pie,302,11,5.7,27
+Mixed Dishes,"Chili con carne with beans, canned",1,cup,242,4.1,0.0,6.8
+Mixed Dishes,"Coleslaw, mayonnaise-type, from grocery/deli",0.50,cup,95,1.7,1.0,2.7
+Mixed Dishes,"Corn dogs, frozen, prepared",2,corn dogs,156,37,,
+Mixed Dishes,"Lasagna with meat, frozen, heated",1,"2.5"" X 4"" piece",206,17,14,20
+Mixed Dishes,"Lasagna, cheese, frozen, unprepared",1,"2.5"" X 4"" piece",227,24,17,34
+Mixed Dishes,"Macaroni and cheese, prepared from box mix",1,cup,198,37,22,57
+Mixed Dishes,"Macaroni salad, from grocery/deli",0.75,cup,153,4.9,2.9,8.1
+Mixed Dishes,"Meatloaf, beef, homemade",3,oz,85,13,6.9,29
+Mixed Dishes,"Pasta mix, classic cheeseburger macaroni, unprepared",0.20,package,37,2.7,,
+Mixed Dishes,"Pasta mix, Italian lasagna, unprepared",0.20,package,36,4.1,2.7,5.4
+Mixed Dishes,"Pizza, cheese topping, thin crust, frozen, baked",0.25,"medium pizza (11-13"" diameter)",134,31,22,39
+Mixed Dishes,Potato salad with egg,0.50,cup,125,1.9,1.9,1.9
+Mixed Dishes,"Potato salad, mayonnaise-type, from grocery/deli",0.50,cup,125,3.2,0.0,6.3
+Mixed Dishes,"Spaghetti with meat sauce, homemade",1,cup,250,4.6,2.5,6.5
+Mixed Dishes,"Sushi, California roll",5,pieces,150,47,30,55
+Mixed Dishes,"Taquitos, frozen, beef and cheese, oven-heated",3,pieces,126,9.3,,
+Mixed Dishes,"Taquitos, frozen, chicken and cheese, oven-heated",3,pieces,126,9.3,,
+Mixed Dishes,"Tuna noodle casserole, homemade",1,cup,224,36,24,81
+Mixed Dishes,"Turnover, pepperoni pizza",1,turnover,127,27,,
+Fast Foods,"Biscuits, fast food",1,biscuit,55,5.0,3.3,9.1
+Fast Foods,"Burrito with beef, beans and cheese, from Mexican carry-out",1,burrito,241,13,6.5,24
+Fast Foods,"Chicken breast, fried, with skin, fast food15",3,oz,85,3.3,0.0,8.5
+Fast Foods,"Chicken leg, fried, with skin, fast food",3,oz,85,2.0,0.0,6.5
+Fast Foods,"Chicken nuggets, fast food",3,oz,85,0.8,0.0,6.2
+Fast Foods,"Milk shake, chocolate, fast food",8,fl oz,227,80,51,103
+Fast Foods,"Milk shake, vanilla, fast food",8,fl oz,227,82,50,107
+Fast Foods,"Pizza, cheese and pepperoni, regular crust, from pizza carry-out",1/8,"large (13-15"" diameter) pizza",124,15,8.8,24
+Fast Foods,"Pizza, cheese, fast food",1/8,"large (13-15"" diameter) pizza",120,15,6.8,20
+Fast Foods,"Pizza, crust only, fast food",1/8,"large (13-15"" diameter) pizza",50,0.8,0.8,0.8
+Fast Foods,"Pizza, with sausage topping, regular crust, fast food",1/8,"large (13-15"" diameter) pizza",138,18,,
+Fast Foods,"Potatoes, French fries, fast food",1,"""small"" serving",71,0.8,0.0,7.2
+Fast Foods,"Sandwich, hamburger, single, large patty, fast food",1,sandwich,175,5.9,3.5,10
+Fast Foods,"Sandwich, cheeseburger, double, regular patty, plain, fast food",1,sandwich,270,30,20,39
+Fast Foods,"Sandwich, cheeseburger, double, regular patty, fast food (bun w iodate dough conditioner)",1,sandwich,270,752,443,1058
+Fast Foods,"Sandwich, cheeseburger, single, large patty, fast food",1,sandwich,182,19,14,26
+Fast Foods,"Sandwich, chicken filet (broiled) sandwich, fast food",1,sandwich,230,4.2,0.9,10
+Fast Foods,"Sandwich, egg, cheese, and ham on English muffin, fast food",1,sandwich,126,31,20,40
+Fast Foods,"Sandwich, fish, fast food",1,sandwich,220,80,50,131
+Fast Foods,"Shrimp, breaded and fried, fast food",3,oz,85,6.3,6.3,6.3
+Fast Foods,"Taco/tostada with beef and cheese, from Mexican carry-out",1,each,102,7.2,4.5,12
+Restaurant Foods (excluding Fast Food Restaurants),"Beef with vegetables in sauce, restaurant, Chinese",1,cup,162,6.9,1.0,25
+Restaurant Foods (excluding Fast Food Restaurants),"Cheese enchilada, restaurant, Mexican",1,enchilada,137,22,,
+Restaurant Foods (excluding Fast Food Restaurants),"Cheese quesadilla, restaurant, Mexican",1,"quesadilla (8-10"" diameter)",194,45,,
+Restaurant Foods (excluding Fast Food Restaurants),"Cheese ravioli with marinara sauce, restaurant, Italian",1,cup,250,54,,
+Restaurant Foods (excluding Fast Food Restaurants),"Chicken with vegetables in sauce, restaurant, Chinese",1,cup,153,5.7,1.2,19
+Restaurant Foods (excluding Fast Food Restaurants),"Fish fillet, parmesan crusted tilapia, restaurant, family style",3,oz,85,11,,
+Restaurant Foods (excluding Fast Food Restaurants),"Fish, salmon, grilled, restaurant",3,oz,85,6.3,,
+Restaurant Foods (excluding Fast Food Restaurants),"Fried mozzarella sticks, restaurant, family style",3,pieces,93,35,32,39
+Restaurant Foods (excluding Fast Food Restaurants),"Fried rice, meatless, restaurant, Chinese",1,cup,137,7.5,1.6,23
+Restaurant Foods (excluding Fast Food Restaurants),"Lasagna with meat, restaurant, Italian",1,"2.5"" X 4"" piece",206,57,,
+Restaurant Foods (excluding Fast Food Restaurants),"Macaroni & cheese, from kids' menu, restaurant, family style",1,cup,136,30,18,44
+Restaurant Foods (excluding Fast Food Restaurants),"Shrimp and vegetables, restaurant, Chinese",1,cup,162,2.4,,
+Sausage and Luncheon Meats,Bologna (beef/pork),2,slices,56,14,7.3,24
+Sausage and Luncheon Meats,"Frankfurter, beef/pork, boiled16",1,frankfurter,52,4.6,0.0,31
+Sausage and Luncheon Meats,"Frankfurter, beef, heated",1,frankfurter,48,3.6,3.6,3.6
+Sausage and Luncheon Meats,Luncheon meat (chicken/turkey),3,oz,85,3.0,0.0,4.6
+Sausage and Luncheon Meats,"Luncheon meat, ham",3,oz,85,1.0,0.0,2.6
+Sausage and Luncheon Meats,"Salami, dry/hard",1,oz,30,3.0,0.8,14
+Sausage and Luncheon Meats,"Salami, luncheon-meat type (not hard)",2,oz,60,7.4,2.1,14
+Sausage and Luncheon Meats,"Sausage, pork, chorizo, raw",1,"link, 4"" long",60,18,,
+Sausage and Luncheon Meats,"Sausage, pork, oven-cooked",3,links,63,2.6,0.0,6.9
+Meats,"Chicken breast, oven-roasted (skin removed)",3,oz,85,1.0,0.0,6.9
+Meats,"Chicken thigh, oven-roasted (skin removed)",3,oz,85,0.7,0.0,8.1
+Meats,"Turkey breast, oven-roasted",3,oz,85,4.1,0.0,52
+Meats,"Turkey, ground, pan-cooked",3,oz,85,3.3,0.0,15
+Meats,"Ham, cured (not canned), baked",3,oz,85,0.6,0.0,5.0
+Meats,"Pork bacon, oven-cooked",2,slices,16,0.2,0.0,1.2
+Meats,"Pork chop, pan-cooked with oil",3,oz,85,0.4,0.0,5.8
+Meats,"Pork roast, loin, oven-roasted",3,oz,85,0.3,0.0,0.8
+Meats,"Beef/calf, liver, pan-cooked with oil",3,oz,85,14,6.5,18
+Meats,"Beef, ground, pan-cooked",3,oz,85,6.4,2.8,16
+Meats,"Beef roast, chuck, oven-roasted",3,oz,85,3.3,1.5,7.0
+Meats,"Beef steak, loin/sirloin, broiled",3,oz,85,4.0,0.0,7.1
+Meats,"Lamb chop, pan-cooked with oil",3,oz,85,2.1,0.0,10

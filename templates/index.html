@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iodine Content Lookup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Iodine Content Lookup</h1>
+        <p class="subtitle">Search common foods for their iodine content (mcg per serving)</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for a food (e.g. milk, salmon, egg)..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="categories">
+            <h2>Browse by Category</h2>
+            <div class="category-buttons">
+                {% for cat in categories %}
+                <button class="category-btn" data-category="{{ cat }}">{{ cat }}</button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="results-section" class="results-section hidden">
+            <div class="results-header">
+                <h2 id="results-title">Results</h2>
+                <button id="clear-btn" class="clear-btn">Clear</button>
+            </div>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Category</th>
+                        <th>Serving</th>
+                        <th>Iodine (mcg)</th>
+                        <th>Range (min–max)</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+            <p id="no-results" class="no-results hidden">No foods found.</p>
+        </div>
+    </main>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const resultsSection = document.getElementById('results-section');
+        const resultsTitle = document.getElementById('results-title');
+        const resultsBody = document.getElementById('results-body');
+        const noResults = document.getElementById('no-results');
+        const clearBtn = document.getElementById('clear-btn');
+        const categoryButtons = document.querySelectorAll('.category-btn');
+
+        let debounceTimer;
+
+        function renderResults(foods, title) {
+            resultsTitle.textContent = title;
+            resultsBody.innerHTML = '';
+
+            if (foods.length === 0) {
+                noResults.classList.remove('hidden');
+                document.getElementById('results-table').classList.add('hidden');
+            } else {
+                noResults.classList.add('hidden');
+                document.getElementById('results-table').classList.remove('hidden');
+                foods.forEach(food => {
+                    const tr = document.createElement('tr');
+                    const range = (food.min !== null && food.max !== null)
+                        ? `${food.min}–${food.max}`
+                        : '—';
+                    tr.innerHTML = `
+                        <td>${food.description}</td>
+                        <td><span class="category-tag">${food.category}</span></td>
+                        <td>${food.serving_size} ${food.serving_measure}</td>
+                        <td class="iodine-value">${food.iodine_mcg}</td>
+                        <td>${range}</td>
+                    `;
+                    resultsBody.appendChild(tr);
+                });
+            }
+            resultsSection.classList.remove('hidden');
+        }
+
+        function clearResults() {
+            resultsSection.classList.add('hidden');
+            resultsBody.innerHTML = '';
+            searchInput.value = '';
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+        }
+
+        searchInput.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
+            const query = searchInput.value.trim();
+            if (!query) {
+                resultsSection.classList.add('hidden');
+                return;
+            }
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            debounceTimer = setTimeout(() => {
+                fetch(`/api/search?q=${encodeURIComponent(query)}`)
+                    .then(res => res.json())
+                    .then(data => renderResults(data, `Search results for "${query}"`));
+            }, 250);
+        });
+
+        categoryButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                searchInput.value = '';
+                categoryButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                fetch(`/api/category/${encodeURIComponent(category)}`)
+                    .then(res => res.json())
+                    .then(data => renderResults(data, category));
+            });
+        });
+
+        clearBtn.addEventListener('click', clearResults);
+    </script>
+</body>
+</html>
