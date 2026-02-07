@@ -6,6 +6,7 @@ from typing import Any, Mapping, Optional
 
 @dataclass(frozen=True)
 class Food:
+    id: Optional[int]
     description: str
     category: str
     serving_size: str
@@ -22,6 +23,7 @@ class Food:
         max_val = float(row["Max"]) if row["Max"] else None
 
         return cls(
+            id=None,
             description=row["Description"],
             category=row["Category"],
             serving_size=row["Serving Size"],
@@ -36,6 +38,7 @@ class Food:
     @classmethod
     def from_db_row(cls, row: Mapping[str, Any]) -> "Food":
         return cls(
+            id=row.get("id"),
             description=row["description"],
             category=row["category"],
             serving_size=row["serving_size"],
@@ -49,6 +52,7 @@ class Food:
 
     def to_dict(self) -> dict[str, Any]:
         return {
+            "id": self.id,
             "description": self.description,
             "category": self.category,
             "serving_size": self.serving_size,

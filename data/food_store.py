@@ -32,7 +32,7 @@ class FoodRepository:
         with self._connect() as conn:
             rows = conn.execute(
                 """
-                SELECT description, category, serving_size, serving_measure,
+                SELECT id, description, category, serving_size, serving_measure,
                        iodine_mcg, min, max, standardized_quantity, standardized_unit
                 FROM foods
                 WHERE LOWER(description) LIKE ?
@@ -46,13 +46,30 @@ class FoodRepository:
         with self._connect() as conn:
             rows = conn.execute(
                 """
-                SELECT description, category, serving_size, serving_measure,
+                SELECT id, description, category, serving_size, serving_measure,
                        iodine_mcg, min, max, standardized_quantity, standardized_unit
                 FROM foods
                 WHERE category = ?
                 ORDER BY description
                 """,
                 (category,),
+            ).fetchall()
+        return [Food.from_db_row(row) for row in rows]
+
+    def by_ids(self, food_ids: Iterable[int]) -> List[Food]:
+        ids = [int(food_id) for food_id in food_ids]
+        if not ids:
+            return []
+        placeholders = ",".join("?" for _ in ids)
+        with self._connect() as conn:
+            rows = conn.execute(
+                f"""
+                SELECT id, description, category, serving_size, serving_measure,
+                       iodine_mcg, min, max, standardized_quantity, standardized_unit
+                FROM foods
+                WHERE id IN ({placeholders})
+                """,
+                ids,
             ).fetchall()
         return [Food.from_db_row(row) for row in rows]
 

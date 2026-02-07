@@ -13,7 +13,12 @@
     </header>
 
     <main>
-        <div class="workflow">
+        <nav class="tab-bar" aria-label="Primary">
+            <button class="tab-btn active" data-tab="search">Search</button>
+            <button class="tab-btn" data-tab="tracker">Trackers</button>
+        </nav>
+
+        <section id="tab-search" class="tab-panel active">
             <div class="search-container">
                 <input
                     type="text"
@@ -31,61 +36,85 @@
                     {% endfor %}
                 </div>
             </div>
-        </div>
 
-        <div class="results-cart-layout">
             <div id="results-section" class="results-section hidden">
                 <div class="results-header">
                     <h2 id="results-title">Results</h2>
                     <button id="clear-btn" class="clear-btn">Clear</button>
                 </div>
-                <table id="results-table">
-                    <thead>
-                        <tr>
-                            <th>Food</th>
-                            <th>Category</th>
-                            <th>Serving</th>
-                            <th>Iodine (mcg)</th>
-                            <th>Level</th>
-                            <th>Range (min–max)</th>
-                            <th>Track</th>
-                        </tr>
-                    </thead>
-                    <tbody id="results-body"></tbody>
-                </table>
+                <div class="table-wrap">
+                    <table id="results-table">
+                        <thead>
+                            <tr>
+                                <th>Food</th>
+                                <th>Category</th>
+                                <th>Serving</th>
+                                <th>Iodine (mcg)</th>
+                                <th>Level</th>
+                                <th>Range (min–max)</th>
+                                <th>Track</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body"></tbody>
+                    </table>
+                </div>
                 <p id="no-results" class="no-results hidden">No foods found.</p>
             </div>
+        </section>
 
-            <aside id="tracker-section" class="tracker-section hidden">
+        <section id="tab-tracker" class="tab-panel">
+            <div id="tracker-section" class="tracker-section">
                 <div class="results-header">
-                    <h2>Daily Tracker</h2>
-                    <button id="clear-tracker-btn" class="clear-btn">Clear Tracker</button>
+                    <div>
+                        <h2>Today's Tracker</h2>
+                        <p id="tracker-date" class="tracker-date"></p>
+                    </div>
+                    <button id="clear-tracker-btn" class="clear-btn">Clear Today</button>
                 </div>
-                <table id="tracker-table">
-                    <thead>
-                        <tr>
-                            <th>Food</th>
-                            <th># Servings</th>
-                            <th>Serving Size</th>
-                            <th>Iodine (mcg)</th>
-                            <th>Remove</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tracker-body"></tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3" class="tracker-total-label">Total Iodine</td>
-                            <td id="tracker-total" class="tracker-total-value">0</td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="tracker-summary">
+                    <div class="summary-card">
+                        <span class="summary-label">Total Iodine</span>
+                        <span id="summary-total" class="summary-value">0</span>
+                    </div>
+                    <div class="summary-card">
+                        <span class="summary-label">Items</span>
+                        <span id="summary-count" class="summary-value">0</span>
+                    </div>
+                    <div class="summary-card">
+                        <span class="summary-label">Avg / Item</span>
+                        <span id="summary-avg" class="summary-value">0</span>
+                    </div>
+                </div>
+                <div id="tracker-alert" class="tracker-alert hidden"></div>
+                <div class="table-wrap">
+                    <table id="tracker-table">
+                        <thead>
+                            <tr>
+                                <th>Food</th>
+                                <th># Servings</th>
+                                <th>Serving Size</th>
+                                <th>Iodine (mcg)</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tracker-body"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="tracker-total-label">Total Iodine</td>
+                                <td id="tracker-total" class="tracker-total-value">0</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <p id="tracker-empty" class="no-results">No items tracked yet.</p>
-            </aside>
-        </div>
+            </div>
+        </section>
     </main>
 
     <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
         const searchInput = document.getElementById('search-input');
         const resultsSection = document.getElementById('results-section');
         const resultsTitle = document.getElementById('results-title');
@@ -93,15 +122,30 @@
         const noResults = document.getElementById('no-results');
         const clearBtn = document.getElementById('clear-btn');
         const categoryButtons = document.querySelectorAll('.category-btn');
-        const trackerSection = document.getElementById('tracker-section');
         const trackerBody = document.getElementById('tracker-body');
         const trackerTable = document.getElementById('tracker-table');
         const trackerTotal = document.getElementById('tracker-total');
         const trackerEmpty = document.getElementById('tracker-empty');
         const clearTrackerBtn = document.getElementById('clear-tracker-btn');
+        const trackerDate = document.getElementById('tracker-date');
+        const trackerAlert = document.getElementById('tracker-alert');
+        const summaryTotal = document.getElementById('summary-total');
+        const summaryCount = document.getElementById('summary-count');
+        const summaryAvg = document.getElementById('summary-avg');
 
         let debounceTimer;
-        let trackerItems = [];
+        let currentLocalDate = getLocalDateString();
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setActiveTab(btn.dataset.tab);
+            });
+        });
+
+        function setActiveTab(tabName) {
+            tabButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tabName));
+            tabPanels.forEach(panel => panel.classList.toggle('active', panel.id === `tab-${tabName}`));
+        }
 
         function renderResults(foods, title) {
             resultsTitle.textContent = title;
@@ -135,14 +179,13 @@
                         <td class="iodine-value">${food.iodine_mcg}</td>
                         <td><span class="iodine-tag ${levelClass}">${levelLabel}</span></td>
                         <td>${range}</td>
-                        <td><button class="track-btn" data-food="${encodeURIComponent(food.description)}">Add</button></td>
+                        <td><button class="track-btn" data-food-id="${food.id}">Add</button></td>
                     `;
                     resultsBody.appendChild(tr);
                 });
             }
             resultsSection.classList.remove('hidden');
-            bindTrackButtons(foods);
-            renderTracker();
+            bindTrackButtons();
         }
 
         function clearResults() {
@@ -152,76 +195,77 @@
             categoryButtons.forEach(btn => btn.classList.remove('active'));
         }
 
-        function bindTrackButtons(foods) {
+        function bindTrackButtons() {
             const trackButtons = document.querySelectorAll('.track-btn');
             trackButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    const description = decodeURIComponent(btn.dataset.food || '');
-                    const food = foods.find(item => item.description === description);
-                    if (!food) return;
-                    trackerItems.push({
-                        description: food.description,
-                        unit: food.serving_measure,
-                        iodine_mcg: Number(food.iodine_mcg),
-                        serving_size: food.serving_size,
-                        quantity: 1,
-                    });
-                    renderTracker();
+                    const foodId = Number(btn.dataset.foodId);
+                    if (!Number.isFinite(foodId)) return;
+                    apiPost('/api/tracker/add', { food_id: foodId, local_date: currentLocalDate })
+                        .then(renderTrackerFromResponse)
+                        .then(() => setActiveTab('tracker'))
+                        .catch(showTrackerError);
                 });
             });
         }
 
-        function renderTracker() {
+        function renderTrackerFromResponse(data) {
+            trackerAlert.classList.add('hidden');
             trackerBody.innerHTML = '';
-            if (trackerItems.length === 0) {
-                trackerSection.classList.remove('hidden');
+            trackerDate.textContent = data.date ? `Date: ${data.date}` : '';
+            summaryTotal.textContent = `${data.total_iodine.toFixed(1)} mcg`;
+            summaryCount.textContent = data.count;
+            const avg = data.count ? data.total_iodine / data.count : 0;
+            summaryAvg.textContent = `${avg.toFixed(1)} mcg`;
+            if (!data.items || data.items.length === 0) {
                 trackerTable.classList.add('hidden');
                 trackerEmpty.classList.remove('hidden');
                 trackerTotal.textContent = '0';
                 return;
             }
 
-            trackerSection.classList.remove('hidden');
             trackerTable.classList.remove('hidden');
             trackerEmpty.classList.add('hidden');
-            let total = 0;
 
-            trackerItems.forEach((item, index) => {
-                const iodineTotal = calculateIodine(item);
-                total += iodineTotal;
+            data.items.forEach((item) => {
                 const tr = document.createElement('tr');
+                const food = item.food;
                 tr.innerHTML = `
-                    <td>${item.description}</td>
+                    <td>${food.description}</td>
                     <td>
                         <input type="number" min="0" step="1" class="quantity-input" value="${item.quantity}">
                     </td>
-                    <td>${item.serving_size} ${item.unit}</td>
-                    <td class="iodine-value">${iodineTotal.toFixed(1)}</td>
+                    <td>${food.serving_size} ${food.serving_measure}</td>
+                    <td class="iodine-value">${item.item_total.toFixed(1)}</td>
                     <td><button class="remove-btn">Remove</button></td>
                 `;
                 const qtyInput = tr.querySelector('.quantity-input');
                 qtyInput.addEventListener('input', () => {
                     const nextVal = Number(qtyInput.value);
-                    item.quantity = Number.isFinite(nextVal) ? nextVal : 0;
-                    renderTracker();
+                    const safeVal = Number.isFinite(nextVal) ? nextVal : 0;
+                    apiPost('/api/tracker/update', {
+                        food_id: food.id,
+                        quantity: safeVal,
+                        local_date: currentLocalDate,
+                    })
+                        .then(renderTrackerFromResponse)
+                        .catch(showTrackerError);
                 });
                 tr.querySelector('.remove-btn').addEventListener('click', () => {
-                    trackerItems.splice(index, 1);
-                    renderTracker();
+                    apiPost('/api/tracker/remove', { food_id: food.id, local_date: currentLocalDate })
+                        .then(renderTrackerFromResponse)
+                        .catch(showTrackerError);
                 });
                 trackerBody.appendChild(tr);
             });
 
-            trackerTotal.textContent = total.toFixed(1);
-        }
-
-        function calculateIodine(item) {
-            return item.iodine_mcg * item.quantity;
+            trackerTotal.textContent = data.total_iodine.toFixed(1);
         }
 
         clearTrackerBtn.addEventListener('click', () => {
-            trackerItems = [];
-            renderTracker();
+            apiPost('/api/tracker/clear', { local_date: currentLocalDate })
+                .then(renderTrackerFromResponse)
+                .catch(showTrackerError);
         });
 
         searchInput.addEventListener('input', () => {
@@ -252,6 +296,48 @@
         });
 
         clearBtn.addEventListener('click', clearResults);
+
+        function apiPost(url, payload) {
+            return fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            }).then(res => {
+                if (!res.ok) {
+                    return res.json().then(err => Promise.reject(err));
+                }
+                return res.json();
+            });
+        }
+
+        function apiGetTracker() {
+            return fetch(`/api/tracker?local_date=${encodeURIComponent(currentLocalDate)}`)
+                .then(res => res.json());
+        }
+
+        function showTrackerError(err) {
+            const message = err && err.error ? err.error : 'Something went wrong.';
+            trackerAlert.textContent = message;
+            trackerAlert.classList.remove('hidden');
+            setTimeout(() => trackerAlert.classList.add('hidden'), 3000);
+        }
+
+        function getLocalDateString() {
+            const now = new Date();
+            const tzOffsetMs = now.getTimezoneOffset() * 60000;
+            return new Date(now - tzOffsetMs).toISOString().split('T')[0];
+        }
+
+        function refreshTrackerIfNeeded() {
+            const nextDate = getLocalDateString();
+            if (nextDate !== currentLocalDate) {
+                currentLocalDate = nextDate;
+            }
+            apiGetTracker().then(renderTrackerFromResponse);
+        }
+
+        refreshTrackerIfNeeded();
+        setInterval(refreshTrackerIfNeeded, 60000);
     </script>
 </body>
 </html>
