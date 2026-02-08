@@ -118,7 +118,8 @@
                 </p>
                 <p class="about-text">
                     Low-iodine diets are often temporary and used for specific medical
-                    situations; this app helps you estimate iodine intake from everyday foods.
+                    situations like thyroid cancer; this app helps you estimate iodine 
+                    intake from everyday foods.
                 </p>
                 <a class="about-link" href="https://github.com/elcap123/lid_lookup" target="_blank" rel="noreferrer">
                     View the project on GitHub
@@ -302,16 +303,35 @@
                     <td><button class="remove-btn">Remove</button></td>
                 `;
                 const qtyInput = tr.querySelector('.quantity-input');
-                qtyInput.addEventListener('input', () => {
+                const commitQuantity = () => {
+                    if (qtyInput.value === '') {
+                        qtyInput.value = item.quantity;
+                        return;
+                    }
                     const nextVal = Number(qtyInput.value);
-                    const safeVal = Number.isFinite(nextVal) ? nextVal : 0;
+                    if (!Number.isFinite(nextVal)) {
+                        qtyInput.value = item.quantity;
+                        return;
+                    }
                     apiPost('/api/tracker/update', {
                         food_id: food.id,
-                        quantity: safeVal,
+                        quantity: nextVal,
                         local_date: currentLocalDate,
                     })
                         .then(renderTrackerFromResponse)
                         .catch(showTrackerError);
+                };
+
+                qtyInput.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        commitQuantity();
+                        qtyInput.blur();
+                    }
+                });
+
+                qtyInput.addEventListener('blur', () => {
+                    commitQuantity();
                 });
                 tr.querySelector('.remove-btn').addEventListener('click', () => {
                     apiPost('/api/tracker/remove', { food_id: food.id, local_date: currentLocalDate })
