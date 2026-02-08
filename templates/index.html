@@ -127,6 +127,23 @@
             </div>
 
             <div class="about-card">
+                <h2>Disclaimer</h2>
+                <p class="about-text">
+                    This app is for informational purposes only and is not a substitute
+                    for professional medical advice, diagnosis, or treatment. Always
+                    consult a qualified healthcare provider before making dietary changes,
+                    especially for medical conditions.
+                </p>
+                <p class="about-text">
+                    Iodine values are approximate and sourced from the USDA database.
+                    Actual content may vary based on brand, preparation, and other
+                    factors. The developers of this app make no warranties regarding
+                    the accuracy or completeness of the data and accept no liability
+                    for decisions made based on it.
+                </p>
+            </div>
+
+            <div class="about-card">
                 <h2>Data Attribution</h2>
                 <ul class="about-list">
                     <li>
@@ -183,7 +200,6 @@
         const progressNote = document.getElementById('progress-note');
 
         let debounceTimer;
-        let currentLocalDate = getLocalDateString();
         let trackerItemCount = 0;
 
         tabButtons.forEach(btn => {
@@ -253,7 +269,7 @@
                 btn.addEventListener('click', () => {
                     const foodId = Number(btn.dataset.foodId);
                     if (!Number.isFinite(foodId)) return;
-                    apiPost('/api/tracker/add', { food_id: foodId, local_date: currentLocalDate })
+                    apiPost('/api/tracker/add', { food_id: foodId })
                         .then(renderTrackerFromResponse)
                         .catch(showTrackerError);
                 });
@@ -296,7 +312,7 @@
                 tr.innerHTML = `
                     <td>${food.description}</td>
                     <td>
-                        <input type="number" min="0" step="1" class="quantity-input" value="${item.quantity}">
+                        <input type="number" min="0" step="0.1" class="quantity-input" value="${item.quantity}">
                     </td>
                     <td>${food.serving_size} ${food.serving_measure}</td>
                     <td class="iodine-value">${item.item_total.toFixed(1)}</td>
@@ -316,7 +332,6 @@
                     apiPost('/api/tracker/update', {
                         food_id: food.id,
                         quantity: nextVal,
-                        local_date: currentLocalDate,
                     })
                         .then(renderTrackerFromResponse)
                         .catch(showTrackerError);
@@ -334,7 +349,7 @@
                     commitQuantity();
                 });
                 tr.querySelector('.remove-btn').addEventListener('click', () => {
-                    apiPost('/api/tracker/remove', { food_id: food.id, local_date: currentLocalDate })
+                    apiPost('/api/tracker/remove', { food_id: food.id })
                         .then(renderTrackerFromResponse)
                         .catch(showTrackerError);
                 });
@@ -345,7 +360,7 @@
         }
 
         clearTrackerBtn.addEventListener('click', () => {
-            apiPost('/api/tracker/clear', { local_date: currentLocalDate })
+            apiPost('/api/tracker/clear', {})
                 .then(renderTrackerFromResponse)
                 .catch(showTrackerError);
         });
@@ -393,8 +408,7 @@
         }
 
         function apiGetTracker() {
-            return fetch(`/api/tracker?local_date=${encodeURIComponent(currentLocalDate)}`)
-                .then(res => res.json());
+            return fetch('/api/tracker').then(res => res.json());
         }
 
         function showTrackerError(err) {
@@ -404,22 +418,7 @@
             setTimeout(() => trackerAlert.classList.add('hidden'), 3000);
         }
 
-        function getLocalDateString() {
-            const now = new Date();
-            const tzOffsetMs = now.getTimezoneOffset() * 60000;
-            return new Date(now - tzOffsetMs).toISOString().split('T')[0];
-        }
-
-        function refreshTrackerIfNeeded() {
-            const nextDate = getLocalDateString();
-            if (nextDate !== currentLocalDate) {
-                currentLocalDate = nextDate;
-            }
-            apiGetTracker().then(renderTrackerFromResponse);
-        }
-
-        refreshTrackerIfNeeded();
-        setInterval(refreshTrackerIfNeeded, 60000);
+        apiGetTracker().then(renderTrackerFromResponse);
     </script>
 </body>
 </html>

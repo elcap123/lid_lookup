@@ -4,6 +4,7 @@ import csv
 import re
 import sqlite3
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Iterable, List, Optional, Tuple
 
 from models.food import Food
@@ -18,6 +19,7 @@ class FoodRepository:
         conn.row_factory = sqlite3.Row
         return conn
 
+    @lru_cache(maxsize=1)
     def get_categories(self) -> List[str]:
         with self._connect() as conn:
             rows = conn.execute(
